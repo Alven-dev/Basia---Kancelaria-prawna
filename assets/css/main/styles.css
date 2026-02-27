@@ -63,7 +63,7 @@
 .primary-btn {
   display: block;
   height: 20rem;
-
+  padding: 2rem 0;
 }
 
 .primary-btn button {
@@ -81,15 +81,15 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  height: 140rem;
   width: 100%;
+  /* height: 200rem; */
 }
 
 .intro-box-one {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: row;
-  height: 60%;
+  /* height: 100rem; */
   width: 75%;
   background-color: #fff;
   border-radius: 0.5rem;
@@ -97,6 +97,7 @@
   left: 50%;
   box-shadow: -8px 12px 30px rgba(0, 0, 0, 0.15);
   overflow: hidden;
+  padding-bottom: 10rem;
 }
 
 .intro-article {
@@ -136,14 +137,14 @@
 }
 
 .intro-box-two {
-  top: 60%;
+  /* height: 100rem; */
   position: relative;
-  height: 40%;
   width: 75%;
   display: flex;
   flex-direction: column;
   left: 50%;
   transform: translateX(-50%);
+
 }
 
 .intro-content-one {
@@ -155,6 +156,7 @@
   width: 70%;
   margin: auto;
   padding: 2rem;
+  overflow: hidden;
 }
 
 .intro-content-one h2 {
@@ -171,6 +173,7 @@
   height: 70%;
   padding: 2rem;
   margin: auto;
+  overflow: hidden;
 }
 
 .intro-content-two p {
@@ -184,4 +187,106 @@
   font-weight: bold;
   letter-spacing: 0.5px;
   transition: color 0.2s ease-in-out;
+}
+
+.specializations {
+  padding: 10rem 5%;
+  background-color: #f9f9f9;
+}
+
+.specializations-title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.specializations-title h2 {
+  font-size: 4rem;
+  color: #161616;
+  font-weight: 600;
+}
+
+.specializations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.specialization-box {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(3px);
+  border: 1px solid #e0e0e0;
+  padding: 4rem 3rem;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background 0.3s ease;
+}
+
+.specialization-box h3 {
+  font-size: 2.4rem;
+  color: #B1976B;
+  margin-bottom: 1.5rem;
+}
+
+.specialization-box p {
+  font-size: 1.8rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.specialization-box:hover {
+  transform: translateY(-0.7rem);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.08);
+}
+
+.specialization-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  background-color: #B1976B;
+  transition: width 0.4s ease;
+}
+
+.specialization-box:hover::before {
+  width: 100%;
+}
+
+#konsultacje {
+  padding: 5rem 8rem;
+  display: block;
+}
+
+.consultation-container {
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+}
+
+.consultation-container h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #161616;
+  text-align: center;
+}
+
+.consultation-header {
+  display: block;
+  margin: 0 15rem;
+}
+
+.consultation-header p {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #B1976B;
+  text-align: center;
+}
+
+
+@media (max-width: 1024px) {
+  .specializations-grid {
+    grid-template-columns: 1fr;
+  }
 }

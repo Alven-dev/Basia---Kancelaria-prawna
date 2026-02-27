@@ -1,5 +1,6 @@
 header {
-  /* display: flex; */
+  display: flex;
+  justify-content: center;
   width: 100%;
   border-bottom: 1px solid #eaeaea;
   background-color: #ffffff;
@@ -9,8 +10,8 @@ header {
 }
 
 .navbar-container {
-  max-width: 120rem;
-  margin: 1rem auto;
+  width: 100%;
+  margin: 1rem;
   padding: 1.2rem 3rem;
   display: flex;
   justify-content: space-between;
@@ -45,24 +46,48 @@ header {
   align-items: center;
   height: 100%;
   width: 100%;
-  min-width: 54rem;
-  gap: 1rem;
+  min-width: 75rem;
+  gap: 5rem;
 }
 
 .nav-links a {
   text-decoration: none;
-
+  position: relative;
   font-size: 1.8rem;
   color: #555555a6;
   height: 5rem;
-  width: 10rem;
+  width: auto;
   transition: color 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 700;
+  border: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0.8rem;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #B1976B;
+  transform: scaleX(0);
+  transform-origin: left;
+  opacity: 0;
+  transition: 
+    transform 0.25s ease
+    opacity 0.25s ease;
 }
 
 .nav-links a:hover {
   color: #000;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
+  transition: 0.5s ease;
 }
