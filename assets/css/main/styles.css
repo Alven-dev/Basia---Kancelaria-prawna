@@ -262,7 +262,8 @@
 .consultation-container {
   display: flex;
   flex-direction: column;
-  height: 30rem;
+  height: 100rem;
+  gap: 2rem;
 }
 
 .consultation-container h2 {
@@ -284,6 +285,97 @@
   text-align: center;
 }
 
+.consultation-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2rem 8rem;
+}
+
+.consultation-box {
+  display: block;
+  position: relative;
+  padding: 2rem;
+  width: 40%;
+  height: 45rem;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.consultation-box img {
+  position: absolute;
+  width: 10rem;
+  object-fit: contain;
+  z-index: 0;
+  bottom: 2.5rem;
+  right: 2rem;
+  opacity: 0.15;
+  filter: grayscale(100%);
+}
+
+.consultation-box h3 {
+  position: relative;
+  font-size: 3rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.consultation-box p {
+  position: relative;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  color: #444;
+}
+
+.consultation-forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+  height: 100%;
+}
+
+.consultation-forms h2 {
+  font-size: 4rem;
+  margin: 3rem 0;
+}
+
+.forms-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  list-style: none;
+  width: 100%;
+  gap: 1rem;
+}
+
+.forms-list li {
+  display: block;
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  padding: 3.5rem 0;
+  color: #B1976B;
+  font-size: 3rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.forms-list li img {
+  object-fit: contain;
+  width: 12.5rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 35%;
+  filter: grayscale(100%);
+  opacity: 0.25;
+}
 
 @media (max-width: 1024px) {
   .specializations-grid {
