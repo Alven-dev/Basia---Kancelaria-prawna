@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid #eaeaea;
+    background-color: #fff;
+    position: relative;
+    bottom: 0;
+    z-index: 100;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 1.2rem 3rem;
+    margin: 1rem;
+    width: 100%;    
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
