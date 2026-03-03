@@ -19,7 +19,7 @@ header {
   flex-wrap: nowrap;
 }
 
-.logo {
+header .logo {
     display: block;
     position: relative;
     font-size: 1.2rem;
@@ -31,7 +31,7 @@ header {
     height: 10rem;
 }
 
-.logo img {
+header .logo img {
     object-fit: contain;
     display: block;
     width: 100%;
