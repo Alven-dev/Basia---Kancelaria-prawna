@@ -3,7 +3,7 @@
     height: 110rem;
      background: 
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-    url('/assets/img/cta2.png');
+    url('../../img/cta2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
