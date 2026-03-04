@@ -13,3 +13,16 @@ const boxes = document.querySelectorAll('.specialization-box');
       border.style.transform = 'scale(0.8)';
     });
   });
+
+  document.querySelectorAll('.scroll-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault()
+
+      const target = document.querySelector(this.getAttribute('href'))
+
+      window.scrollTo({
+        top: target.offsetTop,
+        behavior: 'smooth'
+      });
+    });
+  });
