@@ -59,3 +59,52 @@ footer .logo img {
 .copyrights p {
     padding-top: 1rem;
 }
+
+.links h3 {
+    position: relative;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #B1976B;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    list-style: none;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.4s ease-in-out;
+}
+
+.business-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.footer-col h3 {
+    font-size: 1.5rem;
+    color: #B1976B;
+    display: inline;
+}
+
+.footer-col h4, .footer-col a {
+    font-size: 1.3rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-links a:hover {
+    color: #B1976B;
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
