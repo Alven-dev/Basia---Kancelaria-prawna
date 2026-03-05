@@ -37,7 +37,7 @@ footer .logo {
     letter-spacing: 0.5px;
     color: #333;
     overflow: hidden;
-    min-width: 25rem;
+    /* min-width: 25rem; */
     height: 10rem;
 }
 
