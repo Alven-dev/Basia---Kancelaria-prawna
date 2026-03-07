@@ -108,6 +108,9 @@ header .logo img {
   }
 
   .hamburger {
-    
+    display: block;
+    border: none;
+    width: 5rem;
+    height: 4rem;
   }
 }
