@@ -14,7 +14,7 @@
 
   document.addEventListener("DOMContentLoaded", function (){
     const burger = document.querySelector(".burger");
-    const navbar = document.querySelector(".nav-links");
+    const navbar = document.getElementById("mobile-navbar");
 
     burger.addEventListener("click", function() {
       burger.classList.toggle("active");

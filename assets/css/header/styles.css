@@ -92,11 +92,13 @@ header .logo img {
   width: 100%;
 }
 
-@media  (min-width: 1025px) {
+@media (min-width: 1025px) {
   
-  #mobile {
+  #mobile-navbar, #mobile {
   display: none;
 }
+
+
 }
 
 @media (max-width: 1024px) { 
@@ -112,6 +114,7 @@ header .logo img {
   .burger-nav {
     height: 100%;
     width: 3rem;
+    margin-right: 2rem;
   }
 
   #desktop {
@@ -141,7 +144,7 @@ header .logo img {
   }
 
   .burger span:nth-child(2) {
-    width: 80%;
+    width: 100%;
     align-self: flex-end;
   }
 
@@ -179,10 +182,37 @@ header .logo img {
     right: 0;
     z-index: 1;
     display: flex !important;
+    transform: translateX(0);
+    opacity: 100%;
+    visibility: visible;
+    transition: all 0.5s ease-in-out;
+    justify-content: flex-start;
+    padding-top: 5rem;
   }
 
   header {
     overflow: visible;
   }
 
+  .nav-links {
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    width: 50vh;
+    top: 0;
+    right: 0;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    justify-content: flex-start;
+    padding-top: 5rem;
+  }
+
+  .nav-links a {
+    width: 100%;
+    font-size: 3rem;
+    color: #eaeaea;
+  }
 }
