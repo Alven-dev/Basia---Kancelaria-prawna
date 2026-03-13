@@ -337,8 +337,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  
-  height: 100%;
+  /* height: 100%; */
 }
 
 .consultation-forms h2 {
@@ -354,6 +353,7 @@
   list-style: none;
   width: 100%;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .forms-list li {
@@ -361,22 +361,26 @@
   position: relative;
   flex: 1;
   width: 100%;
-  height: auto;
+  min-width: 40rem;
+  height: 25rem;
   border: 1px solid #e0e0e0;
-  text-align: center;
   padding: 3.5rem 0;
-  color: #B1976B;
-  font-size: 3rem;
   background-color: #fff;
   overflow: hidden;
+  align-content: center;
+}
+
+.forms-list li div h3 {
+  color: #B1976B;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
 }
 
 .forms-list li img {
   object-fit: contain;
   width: 12.5rem;
-  position: absolute;
-  bottom: 2rem;
-  right: 35%;
+  height: auto;
   filter: grayscale(100%);
   opacity: 0.25;
 }
@@ -539,6 +543,20 @@
     .consultation-header p {
     font-size: 1.8rem;
   }
+
+  .forms-list li {
+    min-width: 25rem;
+  }
+
+  .forms-list li div h3 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .consultation-forms h2 {
+    font-size: 2.4rem;
+  }
+
 }
 
 @media (min-width:1025px) and (max-width: 1600px) {

@@ -37,7 +37,6 @@ footer .logo {
     letter-spacing: 0.5px;
     color: #333;
     overflow: hidden;
-    /* min-width: 25rem; */
     height: 10rem;
 }
 
@@ -108,4 +107,20 @@ footer .logo img {
     color: #B1976B;
     transform: scale(1.1);
     transition: 0.4s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+    .footer-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .links {
+        width: 254.55px;
+    }
+
+    .footer-links li {
+        padding-bottom: 0.5rem;
+    }
 }
