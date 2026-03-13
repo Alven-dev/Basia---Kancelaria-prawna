@@ -16,22 +16,22 @@
     const burger = document.querySelector(".burger");
     const navbar = document.getElementById("mobile-navbar");
     const span = document.querySelectorAll(".burger span");
+    const scrollLink = document.querySelectorAll(".scroll-link")
 
     burger.addEventListener("click", function() {
       burger.classList.toggle("active");
       navbar.classList.toggle("active");
-      colorSwap()
+      burgerMenuVerifier()
     });
     
-    function colorSwap() {
-      span.forEach(function(el) {
-      if (burger.classList.contains("active")) {
-          el.style.backgroundColor = "#eaeaea";
-      } else {
-        el.style.backgroundColor = "#333"
-      }
-    });
-  }
-});
+    function burgerMenuVerifier() {
+      scrollLink.forEach(function(link) {
+        link.addEventListener("click", function() {
+            burger.classList.remove("active");
+            navbar.classList.remove("active");
+        });
+      });
+    }
+  });
 
  
