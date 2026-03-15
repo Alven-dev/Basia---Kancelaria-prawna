@@ -12,10 +12,9 @@
     });
   });
 
-  document.addEventListener("DOMContentLoaded", function (){
+  document.addEventListener("DOMContentLoaded", function () {
     const burger = document.querySelector(".burger");
     const navbar = document.getElementById("mobile-navbar");
-    const span = document.querySelectorAll(".burger span");
     const scrollLink = document.querySelectorAll(".scroll-link")
 
     burger.addEventListener("click", function() {
@@ -32,6 +31,44 @@
         });
       });
     }
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("offer-modal");
+    const offerBox = document.querySelectorAll(".specialization-box");
+    const modalClose = document.getElementById("modal-close");
+    const modalContent = document.querySelector(".modal-content");
+
+    function openModal() {
+      offerBox.forEach(function(card) {
+        card.addEventListener("click", function() {
+          modal.style.display = "block";
+        })
+      })
+    }
+    function closeModal() {
+      modalClose.addEventListener("click", function() {
+        if (modal.style.display === "block") {
+          modal.style.display = "none";
+        } else {modal.style.display = "block"}
+      })
+    }
+    closeModal()
+    openModal()
+
+    modal.addEventListener("click", function() {
+      modal.style.display = "none";
+    });
+
+    modalContent.addEventListener("click", function(event) {
+      event.stopPropagation();
+    });
+
+    document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    modal.style.display = "none";
+  }
+  });
   });
 
  

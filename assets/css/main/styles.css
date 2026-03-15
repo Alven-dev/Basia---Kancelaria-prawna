@@ -267,6 +267,7 @@
   background: transparent;
   backdrop-filter: blur(10px);
   display: none;
+  z-index: 100;
 }
 
 .modal-content {
