@@ -79,6 +79,18 @@
   cursor: pointer;
 }
 
+.contact-link-btn {
+  font-size: 1.8rem;
+  color: #161616;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link-btn:hover {
+  color: #0b3d2e;
+}
+
+
 .intro-container {
   display: flex;
   position: relative;
@@ -238,7 +250,7 @@
   font-size: 2rem;
   color: #0b3d2e;
   text-align: right;
-  margin-top: auto;
+  margin-top: 1.5rem;
 }
 
 .specialization-box p {
@@ -654,7 +666,14 @@
     padding: 0 2.5rem;
     line-height: 1.5;
   }
+
+  .specialization-box h3, .specialization-box p, .specialization-box h4 {
+    text-align: center;
+  }
   
+  .specialization-box h4 {
+    margin-top: 2.5rem;
+  }
 }
 
 @media (min-width:1025px) and (max-width: 1600px) {
