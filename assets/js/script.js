@@ -60,6 +60,7 @@
         list: [
         "Sprawy o zapłatę i dochodzenie roszczeń majątkowych",
         "Windykacja należności",
+        "Podział majątku wspólnego po rozwodzie",
         "Odszkodowania i zadośćuczynienia za szkody majątkowe i niemajątkowe",
         "Sporządzanie i analiza umów cywilnoprawnych",
         "Umowy sprzedaży, najmu i umowy o świadczenie usług",
@@ -74,7 +75,6 @@
         "Obrona osób podejrzanych i oskarżonych w sprawach karnych",
         "Reprezentacja na etapie postępowania przygotowawczego",
         "Reprezentacja przed sądem karnym",
-        "Reprezentacja pokrzywdzonych jako oskarżyciela posiłkowego",
         "Udział w przesłuchaniach",
         "Sporządzanie wniosków dowodowych",
         "Przygotowywanie apelacji i środków odwoławczych",
@@ -94,20 +94,12 @@
         "Reprezentacja przedsiębiorców w sporach z kontrahentami",
         "Sprawy o zapłatę i dochodzenie należności",
         "Doradztwo w zakresie bieżącego funkcjonowania firmy",
-        "Identyfikacja ryzyk prawnych w działalności gospodarczej",
         "Przygotowywanie regulaminów i dokumentacji firmowej"
         ]
       },
       medyczne: {
         title: "Prawo Medyczne",
         list: [
-        "Sprawy dotyczące błędów medycznych",
-        "Sprawy dotyczące naruszenia praw pacjenta",
-        "Reprezentacja pacjentów w sporach z placówkami medycznymi",
-        "Reprezentacja w sporach z personelem medycznym",
-        "Analiza dokumentacji medycznej",
-        "Dochodzenie odszkodowań za błędy medyczne",
-        "Dochodzenie zadośćuczynień za szkody zdrowotne",
         "Doradztwo prawne na etapie przedsądowym",
         "Reprezentacja przed sądem i właściwymi instytucjami"
         ]

@@ -227,6 +227,14 @@
   gap: 4rem;
 }
 
+.specializations-grid > :last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 100%;
+  max-width: 80rem; 
+}
+
+
 .specialization-box {
   display: flex;
   flex-direction: column;
@@ -307,8 +315,8 @@
   width: 80%;
   height: 80%;
   overflow-y: scroll;
-
 }
+
 
 #modal-title {
   font-size: 4rem;
