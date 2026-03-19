@@ -10,3 +10,7 @@ html {
     color: #1a1a1a;
     background-color: #f5f5f5;
 }
+
+body.modal-open {
+  overflow: hidden;
+}

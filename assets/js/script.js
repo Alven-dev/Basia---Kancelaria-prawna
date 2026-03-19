@@ -117,6 +117,22 @@
         "Mediacje prowadzone na podstawie skierowania przez sąd",
         "Mediacje prowadzone z inicjatywy stron"
         ]
+      },
+      spadkowe: {
+        title: "Sprawy Spadkowe",
+        list: [
+          "Przygotowanie korespondencji",
+          "Przygotowanie pism procesowych",
+          "Przygotowanie wniosku o stwierdzenie nabycia spadku",
+          "Podział majątku",
+          "Składanie pism i dowodów w trakcie postępowania",
+          "Reprezentowanie w sądzie w sprawach spadkowych",
+          "Reprezentowanie pozasądowe (mediacje, negocjacje)",
+          "Udzielanie porad prawnych",
+          "Sprawy zachowku",
+          "Wydziedziczenie",
+          "Kwestionowanie ważności testamentu"
+        ]
       }
     }
 
@@ -129,6 +145,7 @@
           const data = offerData[type];
 
           modal.style.display = "block";
+          document.body.classList.add("modal-open");
 
           modalTitle.innerText = data.title
           
@@ -145,16 +162,16 @@
     }
     function closeModal() {
       modalClose.addEventListener("click", function() {
-        if (modal.style.display === "block") {
-          modal.style.display = "none";
-        } else {modal.style.display = "block"}
+        document.body.classList.remove("modal-open");
+        modal.style.display = "none";
       })
     }
-    closeModal()
     openModal()
+    closeModal()
 
     modal.addEventListener("click", function() {
       modal.style.display = "none";
+      document.body.classList.remove("modal-open");
     });
 
     modalContent.addEventListener("click", function(event) {
@@ -164,7 +181,9 @@
     document.addEventListener("keydown", function(event) {
   if (event.key === "Escape") {
     modal.style.display = "none";
+    document.body.classList.remove("modal-open");
   }
   });
 
+  
   });
