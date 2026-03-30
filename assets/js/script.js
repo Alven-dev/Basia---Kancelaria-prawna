@@ -87,14 +87,10 @@
         title: "Prawo Przedsiębiorców",
         list: [
         "Kompleksowa obsługa prawna przedsiębiorców",
-        "Pomoc w zakładaniu działalności gospodarczej",
-        "Pomoc w zakładaniu spółek",
         "Przygotowywanie i analiza umów handlowych",
-        "Tworzenie dokumentów związanych z prowadzeniem działalności",
         "Reprezentacja przedsiębiorców w sporach z kontrahentami",
         "Sprawy o zapłatę i dochodzenie należności",
-        "Doradztwo w zakresie bieżącego funkcjonowania firmy",
-        "Przygotowywanie regulaminów i dokumentacji firmowej"
+        "Doradztwo w zakresie bieżącego funkcjonowania firmy"
         ]
       },
       medyczne: {
